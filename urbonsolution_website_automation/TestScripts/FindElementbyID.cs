@@ -9,7 +9,7 @@ using static urbonsolution_website_automation.GlobalMessage.Message;
 
 namespace urbonsolution_website_automation.Test
 {
-    public class FindElementbyID
+    class FindElementbyID
     {
         public FindElementbyID()
         {

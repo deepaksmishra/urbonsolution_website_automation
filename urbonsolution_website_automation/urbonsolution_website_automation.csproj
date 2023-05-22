@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject></StartupObject>
+    <StartupObject>urbonsolution_website_automation.Test.TextBoxInput</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
