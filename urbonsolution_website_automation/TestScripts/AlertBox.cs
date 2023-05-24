@@ -26,15 +26,21 @@ namespace urbonsolution_website_automation.TestScripts
             alert = driver.SwitchTo().Alert();
             alert.Accept();
             Image = driver.FindElement(By.CssSelector("body > div.sgpb-basic-bottom-left.sgpb-floating-button.sg-popup-id-5517"));
-            if (Image.Displayed)
+            try
             {
-                SucessMessage("FirstName Element by ID Found successfully!!!");
+                if (Image.Displayed)
+                {
+                    SucessMessage("FirstName Element by ID Found successfully!!!");
 
+                }
             }
-            else
+            catch(NoAlertPresentException)
             {
-                FailMessage("No Response!!");
+                {
+                    FailMessage("No Response!!");
+                }
             }
+           
             Console.WriteLine(alert.Text);
             Thread.Sleep(2300);
             driver.Quit();
